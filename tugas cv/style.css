@@ -1,36 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-h1{
+body {
+    width: 700px;
+    height: 100vh;
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px gray;
+    padding: 20px;
+}
+
+h1 {
     font-family: 'roboto';
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.profile{
+.profile {
     padding-right: 20px;
+    width: 200px;
+    height: 270px;
+    margin: auto;
 }
 
-.contact{
+.contact-container {
+    display: flex;
+}
+
+.contact {
     display: flex;
     align-items: center;
-    padding-right: 10px;
+    padding: 0px 5px;
+    margin: 0px 10px;
 }
 
-.contact-container{
-    display: flex;
+.contact:hover {
+    background-color: #808099;
+    border-radius: 25px;
+    color: aliceblue;
 }
 
-.icon{
+.contact-container-responsive {
+    display: none;
+}
+
+.contact a:hover {
+    color: aliceblue;
+}
+
+.icon {
     padding: 5px;
 }
 
-.header{
+.header {
+    display: flex;
+    width: 100%;
+}
+
+table {
+    text-align: left;
+    width: 300px;
+}
+
+.skill-container {
     display: flex;
 }
 
-table{
-    text-align: left;
-    width: 300px;
+.skill {
+    display: inline;
+    width: 50%;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+    body {
+        width: 500px;
+        height: auto;
+    }
+
+    .contact-container {
+        display: none;
+    }
+
+    .contact-container-responsive {
+        display: flex;
+    }
+
+    .skill-container {
+        display: inline;
+    }
 }
